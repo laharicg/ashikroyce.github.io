@@ -1,0 +1,44 @@
+.main-button {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: solid 1px rgb(255, 255, 255);
+  color: var(--background-color);
+  font-weight: 700;
+  width: max-content;
+  padding: 13px 22px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.main-button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--background-color);
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
+}
+
+.project-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* Media Query */
+@media (max-width: 768px) {
+  .main-button {
+    font-size: 15px;
+    padding: 12px 18px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .main-button {
+    font-size: 12px;
+  }
+}
