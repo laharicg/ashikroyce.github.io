@@ -9,7 +9,16 @@ const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
+  const [prof, setrepo] = useState({
+    name: "Ashik",
+    bio: "Passionate Technologist 🖤",
+    isHireable: false,
+    avatarUrl:
+      "https://avatars1.githubusercontent.com/u/57917415?u=09c34bbf1071b88c74225ec117eafd6d9807909d&v=4",
+    location: "Chennai",
+    __typename: "User",
+  });
+
   function setProfileFunction(array) {
     setrepo(array);
   }
@@ -53,7 +62,7 @@ export default function Profile() {
   }
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
-      getProfileData();
+      // getProfileData();
     }
   }, []);
   if (

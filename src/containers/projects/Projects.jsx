@@ -11,10 +11,29 @@ export default function Projects() {
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
-  const [repo, setrepo] = useState([]);
+  const [repo, setrepo] = useState([
+    {
+      node: {
+        name: "web-development",
+        description: null,
+        forkCount: 3,
+        stargazers: { totalCount: 0, __typename: "StargazerConnection" },
+        url: "https://github.com/AshikRoyce/web-development",
+        id: "MDEwOlJlcG9zaXRvcnkyODc3OTc5NDE=",
+        diskUsage: 1301,
+        primaryLanguage: {
+          name: "JavaScript",
+          color: "#f1e05a",
+          __typename: "Language",
+        },
+        __typename: "Repository",
+      },
+      __typename: "PinnableItemEdge",
+    },
+  ]);
 
   useEffect(() => {
-    getRepoData();
+    // getRepoData();
   }, []);
 
   function getRepoData() {
