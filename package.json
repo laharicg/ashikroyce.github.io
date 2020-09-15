@@ -26,11 +26,13 @@
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "apollo-boost": "^0.4.9",
+    "colorthief": "^2.3.2",
     "gh-pages": "^3.1.0",
     "graphql": "^15.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-easy-emoji": "^1.4.0",
+    "react-headroom": "^3.0.0",
     "react-reveal": "^1.2.2",
     "react-scripts": "^3.4.3",
     "react-twitter-embed": "^3.0.3"
